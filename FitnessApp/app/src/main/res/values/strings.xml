@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FitnessApp</string>
+    <string name="your_fitness">Your Fitness, Your Way</string>
+    <string name="profile_alert_message">Sign in with GoogleFit or FitnessApp</string>
+    <string name="create_profile">FitnessApp</string>
+    <string name="google_signin">GoogleFit</string>
+    <string name="password">Password</string>
+    <string name="confrim_password">Confirm Password</string>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/activity_make_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="charlyn23.fitnessapp.MakeAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:text="User Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userNameTextView"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/userNameEditText"
+            android:hint="Create a Unique User Name"
+            android:inputType="textNoSuggestions" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordTextView"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordEditText"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/passwordTextView"
+            />
+
+        <TextView
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:text="SHOW"
+            android:id="@+id/passwordToggle"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:layout_gravity="end"
+            android:layout_alignBottom="@+id/passwordEditText"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Confirm \nPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmPasswordTextView"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_alignTop="@+id/confirmPasswordTextView"
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/confirmPasswordTextView" />
+
+        <TextView
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:text="SHOW"
+            android:id="@+id/confirmPasswordToggle"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:layout_gravity="end"
+            android:layout_alignBottom="@+id/confirmPasswordEditText"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="20dp"
+            android:id="@+id/why"
+            android:background="@drawable/why"
+            android:layout_height="20dp"
+            android:layout_below="@+id/userSex"
+            android:layout_alignStart="@+id/userSex" />
+
+        <TextView
+        android:text="Sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userSex"
+        android:textSize="20sp"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sexes"
+        android:checkedButton="@+id/female"
+        android:paddingStart="80dp"
+        >
+        <RadioButton
+            android:text="Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:text="Male" />
+    </RadioGroup>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:id="@+id/save"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>
